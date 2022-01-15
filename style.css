@@ -119,8 +119,13 @@ li {
  /* /
  medi query */
  @media only screen and (max-width:688px) {
-     .items {
+    .grid-container{
+        width: 100%;
+
+    } 
+    .grid-item {
 
          grid-template-columns: (1, 1fr);
+         flex-direction: column;
      }
  }
