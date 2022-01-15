@@ -48,7 +48,7 @@ li {
   text-decoration: none;
   color: aliceblue;
   padding: 10px 40px;
-  background-image: linear-gradient(rgba(108, 16, 161, 0.445), rgb(18, 8, 53));
+  background-image: linear-gradient(tomato, purple);
   border-radius: 5px;
   font-weight: 400;
 }
@@ -101,18 +101,26 @@ li {
   display: flex;
   justify-content: end;
   margin-right: 140px;
-  color: rgb(102, 18, 161);
+  color: salmon;
   margin-top: -20px;
 }
 .bottom {
   text-align: center;
-  background-color: rgb(36, 32, 32);
+  background-color: rgb(5, 5, 58);
   color: white;
   padding: 30px;
 }
-.icon {
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
-    padding: 5px;
+.icon a {
+  text-decoration: none;
+  justify-content: center;
+  margin: 4px;
+  font-size: 25px;
 }
+ /* /
+ medi query */
+ @media only screen and (max-width:688px) {
+     .items {
+
+         grid-template-columns: (1, 1fr);
+     }
+ }
